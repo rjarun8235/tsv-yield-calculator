@@ -12,7 +12,6 @@ from io import BytesIO
 # Set page config for a wide layout which is more suitable for dashboards
 st.set_page_config(layout="wide", page_title="TSV Yield Calculator")
 
-@st.cache_data() # This function will be cached
 def calculate_yield(buy, sell, credit_to_customer, days_credit_given, credit_from_vendor, days_credit_availed, bank_interest, \
     additional_costs, tax_rate, desired_profit_margin):
     try:
